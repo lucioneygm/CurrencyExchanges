@@ -96,8 +96,6 @@ function loadSearch() {
     loadChart();
 }
 
-//$("#loadingGraph").hide();
-//$("#loadingRates").hide();
 
 $(document).ready(function () {    
 
