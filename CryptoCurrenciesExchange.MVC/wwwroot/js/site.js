@@ -38,7 +38,7 @@
         });
 }
 
-function loadChart() {   
+function loadChart() {
 
     $("#loadingGraph").show();
     $("#graph").hide();
@@ -53,21 +53,21 @@ function loadChart() {
             var result = response.data;
 
             if (!result || result.length == 0)
-                return;            
+                return;
 
             var datasets = result.map(function (item) {
                 return {
                     label: "Rates variation for: " + item.currency,
                     data: item.prices
                 };
-            });            
+            });
 
             var ctx = document.getElementById('chart').getContext('2d');
             var chart = new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: result[0].timestamps,
-                    datasets: datasets                    
+                    datasets: datasets
                 },
                 options: {
                     responsive: false,
@@ -81,13 +81,13 @@ function loadChart() {
                 }
             });
         })
-        .catch(function (error) {            
+        .catch(function (error) {
             console.log(error);
         })
         .then(function () {
             $("#loadingGraph").hide();
             $("#graph").show();
-        });  
+        });
 }
 
 function loadSearch() {
@@ -96,13 +96,16 @@ function loadSearch() {
     loadChart();
 }
 
-$(document).ready(function () {
+//$("#loadingGraph").hide();
+//$("#loadingRates").hide();
+
+$(document).ready(function () {    
+
     $('#trade').select2();
     $('#to').select2();
 
     $('#trade, #to').change(function () {
-        loadSearch();
-    });
-
-    loadSearch();
+        if ($('#trade').val() && $('#to').val())
+            loadSearch();
+    });    
 });
