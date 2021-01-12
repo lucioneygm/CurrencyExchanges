@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoCurrenciesExchange.MVC", "CryptoCurrenciesExchange.MVC\CryptoCurrenciesExchange.MVC.csproj", "{6F37651C-FABE-4B5C-AF6B-31D67E6E894C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoCurrenciesExchange.API", "CryptoCurrenciesExchange.API\CryptoCurrenciesExchange.API.csproj", "{D073294E-5A4E-49B4-93B3-0107505137ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoCurrenciesExchange.Domain", "CryptoCurrenciesExchange.Domain\CryptoCurrenciesExchange.Domain.csproj", "{9D5A92B4-54A5-4AD8-9C55-2875C7981AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoCurrenciesExchange.Infra", "CryptoCurrenciesExchange.Infra\CryptoCurrenciesExchange.Infra.csproj", "{9B3EA7E5-0E5C-4C1B-BEA5-3C4570C70D39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{DC744F48-638C-4D3C-A88E-E6E54E9CFDD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F37651C-FABE-4B5C-AF6B-31D67E6E894C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F37651C-FABE-4B5C-AF6B-31D67E6E894C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F37651C-FABE-4B5C-AF6B-31D67E6E894C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F37651C-FABE-4B5C-AF6B-31D67E6E894C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D073294E-5A4E-49B4-93B3-0107505137ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D073294E-5A4E-49B4-93B3-0107505137ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D073294E-5A4E-49B4-93B3-0107505137ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D073294E-5A4E-49B4-93B3-0107505137ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D5A92B4-54A5-4AD8-9C55-2875C7981AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D5A92B4-54A5-4AD8-9C55-2875C7981AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D5A92B4-54A5-4AD8-9C55-2875C7981AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D5A92B4-54A5-4AD8-9C55-2875C7981AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3EA7E5-0E5C-4C1B-BEA5-3C4570C70D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3EA7E5-0E5C-4C1B-BEA5-3C4570C70D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3EA7E5-0E5C-4C1B-BEA5-3C4570C70D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3EA7E5-0E5C-4C1B-BEA5-3C4570C70D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC744F48-638C-4D3C-A88E-E6E54E9CFDD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC744F48-638C-4D3C-A88E-E6E54E9CFDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC744F48-638C-4D3C-A88E-E6E54E9CFDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC744F48-638C-4D3C-A88E-E6E54E9CFDD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8583A10A-951D-42F1-B61D-512074F6E03F}
+	EndGlobalSection
+EndGlobal

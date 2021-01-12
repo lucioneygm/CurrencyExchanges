@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <form>
+        <div class="form-group col-md-3">
+            <label for="trade" class="col-sm-12 col-form-label">Trade</label>
+            <div class="col-sm-12">
+                <select class="form-control" name="trade" id="trade">
+                    <option value="BTC">BTC (Bitcoin)</option>
+                    <option value="ETC">ETC (Ethereum)</option>
+                    <option value="XMR">XMR (Monero)</option>
+                    <option value="ZEC">ZEC (Zcash)</option>
+                    <option value="BCH">BCH (Bitcoin Cash)</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="to" class="col-sm-12 col-form-label">To</label>
+            <div class="col-sm-12">
+                <select class="form-control" name="to" id="to">
+                    <option value="USDT">USDT (Tether)</option>
+                    <option value="BTC">BTC (Bitcoin)</option>
+                    <option value="ETC">ETC (Ethereum)</option>
+                    <option value="XMR">XMR (Monero)</option>
+                    <option value="ZEC">ZEC (Zcash)</option>
+                    <option value="BCH">BCH (Bitcoin Cash)</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="row">
+    <hr />
+</div>
+
+<div>
+    <div class="loading" id="loadingRates">
+        <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+    </div>
+</div>
+
+<div class="row hide" id="ratesGrid">    
+    <table id="rates">
+        <thead>
+            <tr>
+                <th>Exchange</th>
+                <th>Rate</th>
+                <th>Price USD</th>
+                <th>Date</th>
+                <th>Best</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+<div class="row">
+    <hr />
+</div>
+
+<div>
+    <div class="loading" id="loadingGraph">
+        <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+    </div>
+</div>
+
+<div class="row" id="graph">
+    <div id="placeholder">
+        <canvas id="chart" width="700" height="400"></canvas>
+    </div>
+</div>
